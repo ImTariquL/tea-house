@@ -1,32 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tea House</title>
-      <!-- ---------google font cdn ------------ -->
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- ---------google font cdn ------------ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <!-- -------font awesome cdn ---------- -->
     <script src="https://kit.fontawesome.com/bcb924b58e.js" crossorigin="anonymous"></script>
-   
+
     <!-- -----tailwind cdn -------- -->
     <script src="https://cdn.tailwindcss.com"></script>
-   
+
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
             }
-          }
         }
-      </script>
+    </script>
 </head>
+
 <body>
-    
+    <main class="max-w-screen-lg mx-auto">
+        <header class="pt-10 mb-20">
+            <div class="flex lg:items-center justify-center">
+                <!-- ---------text----- -->
+                <div class="w-full">
+                    <h2 class="text-5xl lg:text-7xl font-bold">It's good <br>
+                        tea time at The <br>Tea House</h2>
+                        <br>
+                    <p class="text-gray-500">Tea and Botanical Solutions Supplier Give Optimum <br>Satisfaction To Your
+                        Taste Buds.</p>
+                        <br>
+                    <button
+                        class="text-white font-bold px-4 py-3 bg-gradient-to-r from-orange-500 to-red-500 rounded-lg ">Explore
+                        More <i class="fa-solid fa-arrow-right -rotate-45"></i></button>
+                </div>
+                <!-- ---------image --------- -->
+                <div class=" relative">
+                    <img class="" src="images/banner.png" alt="">
+                    <!-- ---------small card ------- -->
+                    <div class="absolute top-25 ml-27 flex bg-white shadow-lg rounded-lg px-2 py-2 ">
+                        <!-- ---icon---- -->
+                        <div class="flex items-center text-2xl text-amber-400"><i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="">
+                            <p class="text-2xl md:3xl lg:text-4xl font-bold">5.00</p>
+                            <p class="text-2xl text-gray-500">Trust Pilot Ratings</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+    </main>
 </body>
+
 </html>
